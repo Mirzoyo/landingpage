@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8vh;
+}
+
+nav > img {
+  width: 300px;
+}
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > ul > li {
+  margin: 15px 60px;
+}
+
+nav > ul > li {
+  list-style: none;
+}
+
+.burger_menu {
+  display: none;
+}
+
+header {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+header > input {
+  margin: 10px 0;
+  padding: 2px;
+  width: 250px;
+}
+
+header > button {
+  padding: 5px 8px;
+  background-color: darkorange;
+  border-style: none;
+}
+
+.services > article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 700px;
+  margin: 25px auto;
+}
+
+article > i {
+  font-size: 32pt;
+  color: darkorange;
+  width: 140px;
+  margin: 5px;
+}
+
+article > .info {
+  font-size: 12pt;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  padding: 5px;
+}
+
+.video {
+  max-width: 500px;
+  margin: 25px auto;
+}
+.video > form {
+  display: none;
+}
+
+.video > form > input {
+  width: 100%;
+  margin: auto;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.prices > article {
+  border: 1.5px solid black;
+  width: 250px;
+  text-align: center;
+  margin: 25px;
+  height: 200px;
+}
+
+.prices > article > h1 {
+  background-color: grey;
+  margin: 0 0 10px 0;
+}
+.prices > article > p {
+  margin: 3px;
+}
+
+.prices > article > input {
+  padding: 3px;
+  width: 80px;
+  background-color: #f1c40f;
+  border: none;
+  margin: 20px 0;
+}
+
+footer {
+  max-width: 800px;
+  margin: 25px auto;
+  padding: 5px;
+  background-color: #ddd;
+}
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > ul > li {
+  list-style: none;
+  margin: 5px;
+}
+footer > p {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 800px) {
+  nav > ul {
+    display: none;
+  }
+  .burger_menu {
+    display: block;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .video > iframe {
+    display: none;
+  }
+  .video > form {
+    display: block;
+  }
+  .prices {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 317px) {
+  nav > img {
+    display: none;
+  }
+}
